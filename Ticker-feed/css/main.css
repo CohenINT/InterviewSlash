@@ -79,15 +79,12 @@ body {
 
 .cont_poster {
 
+
   
-   
 
 }
 
-/*.poster_pic {
-    background-image: url('../images/user1.jpg');
-    
-}*/
+
 
 .poster_name {
 
@@ -100,22 +97,24 @@ body {
 .poster_date {
 
     color: red;
-    font-size: 8px;
+    font-size: 9px;
     display: block;
-    width: 50px;
-  
+    width: 61px;
+    
 
 }
 
 
 .poster_text {
     color: white;
+    font-size: 12px;
+    text-align: right;
 }
 
 
 .box {
-    margin-bottom: 10%;
 
+    
 }
 
 .seperator {

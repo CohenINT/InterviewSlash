@@ -29,7 +29,7 @@ function send() {
     var user_pic = document.getElementsByClassName("typing_user_profile")[0].src;
     var datetime="";
     var d = new Date();
-    datetime += d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes();
+    datetime += d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear() + "&nbsp" + d.getHours() + ":" + d.getMinutes();
 
 
   
@@ -97,7 +97,7 @@ function update()
        
 
         //inserting the code of the new item into HTML 
-        $("#first_box").prepend(template);
+        $("#append_here").prepend(template);
 
 
         //{doing animation}
