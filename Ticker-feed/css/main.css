@@ -84,10 +84,10 @@ body {
 
 }
 
-.poster_pic {
+/*.poster_pic {
     background-image: url('../images/user1.jpg');
     
-}
+}*/
 
 .poster_name {
 
@@ -111,3 +111,16 @@ body {
 .poster_text {
     color: white;
 }
+
+
+.box {
+    margin-bottom: 10%;
+
+}
+
+.seperator {
+    z-index: 2;
+    background-image: url('../images/seperator.png');
+    display: block;
+}
+
