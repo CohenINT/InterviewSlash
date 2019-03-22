@@ -60,7 +60,7 @@ function delay(ms) {
 var duration_css = "0.5";//seconds
 var i = 0;//index for loop
 var stop;
-var delay_interval = 3000;//milliseconds 
+var delay_interval = 4500;//milliseconds 
 
 function update() {
 
@@ -99,7 +99,7 @@ function update() {
 
     posts = null;
     //using special css class for animation here
-        var template = '<div class="mt-3 box seperator newly animated fadeInDown delay-'+duration_css+'s  " id="newly' +
+        var template = '<div class="mt-3 box seperator newly animated fadeIn delay-'+duration_css+'s  " id="newly' +
             i +
             '"' +
             ">" +
@@ -157,7 +157,7 @@ function update() {
 
            
             //delete uneeded class
-            collec[collec.length - 1].classList.remove("animated", "fadeInDown", "delay-" + duration_css + "s");
+            collec[collec.length - 1].classList.remove("animated", "fadeIn", "delay-" + duration_css + "s");
             //add needed classes
 
 
