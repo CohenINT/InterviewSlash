@@ -17,3 +17,4 @@ var data = "";
 function getDataVariable() {
     return data;
 }
+

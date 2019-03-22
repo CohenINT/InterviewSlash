@@ -2,23 +2,22 @@
 var posts;
 
 function loadData() {
-    
-   
 
-    // Replace ./data.json with your JSON feed
-    fetch('./js/Jobject.json')
-        .then(response => {
-            return response.json();
-        })
-        .then(data => {
-            // Work with JSON data here
+
+    var txt = '';
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.status == 200 && xmlhttp.readyState == 4) {
+            txt = xmlhttp.responseText;
+            data = JSON.parse(txt);
             stop = data.length;
-            this.data = data;
             update();
-        })
-        .catch(err => {
-            // Do something for an error here
-        });
+        }
+    };
+    xmlhttp.open("GET", "js/Jobject.json", true);
+    xmlhttp.send();
+
+    console.log(txt);
 }
 
 
@@ -195,7 +194,7 @@ $(document).ready(init);
 function init() {
 
     $(".send_btn").click(btn_send);
-    
 
+    loadData();
 
 }
