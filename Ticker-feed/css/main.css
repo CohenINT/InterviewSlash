@@ -8,7 +8,7 @@ body {
 .feed_bg {
     background-image: url('../images/feed_bg.png');
     position: absolute;
-  
+    z-index: 1;
     width: 539px;
     height: 91px;
 
@@ -29,16 +29,16 @@ body {
 .bg_red {
     background-image: url('../images/red-bg.png');
     background-repeat: no-repeat;
-    
+    z-index: 1;
     width: 102%;
-    height: 100%;
+    height: 31%;
 }
 
 
 
 
 .typing_user_profile {
-    background-image: url('../images/1.png');
+    background-image: url('../images/user11.jpg');
     width: 50px;
     height: 50px;
     border: 1px solid red;
@@ -79,7 +79,8 @@ body {
 
 .cont_poster {
 
-
+    max-height: 340px;
+    /*z-index: 2;*/
   
 
 }
@@ -118,7 +119,7 @@ body {
 }
 
 .seperator {
-    z-index: 2;
+    /*z-index: 2;*/
     background-image: url('../images/seperator.png');
     display: block;
 }
