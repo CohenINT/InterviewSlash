@@ -30,9 +30,10 @@ function btn_send() {
     var user_fullname = "Avi .C.";
     var user_input = document.getElementsByClassName("user_input")[0].value;
     var user_pic = "images/user11.jpg";
-    var datetime="";
+    var datetime = "";
     var d = new Date();
-    datetime += d.getDate() + "/" + d.getMonth() + "/" + d.getFullYear() + "&nbsp" + d.getHours() + ":" + d.getMinutes();
+    var month = d.getMonth() + 1;
+    datetime += d.getDate() + "/" + month + "/" + d.getFullYear() + "&nbsp" + d.getHours() + ":" + d.getMinutes();
     data.push(
         {
             picture: user_pic,
@@ -64,7 +65,6 @@ var delay_interval = 3000;//milliseconds
 
 function update() {
 
-    console.log("data updated");
     posts = getDataVariable();
     stop = posts.length;
 
